@@ -14,7 +14,7 @@
   "author": "iovoid",
   "license": "MIT",
   "dependencies": {
-    "request-promise": "^4.2.2",
-    "web3": "^1.0.0-beta.26"
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
   }
 }

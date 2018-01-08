@@ -16,13 +16,16 @@ function CryptokittiesClient(opts = {}){
       json: true
     };
   };
-  self.listAuctions = function(type = "sale", status="open", limit, offset=0) {
+  self.listAuctions = function(type = "sale", status="open", limit, offset=0, orderBy="current_price", orderDirection="asc", search="") {
     let o = self.skeleton(`auctions`);
     o.qs = {
+      orderBy,
+      orderDirection,
       type,
       status,
       limit,
-      offset
+      offset,
+      search
     };
     return request(o).then(d=>d.auctions);
   }
