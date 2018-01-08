@@ -1,6 +1,6 @@
 {
   "name": "cryptokitties-contrib",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A package to interact with the API of cryptokitties.co",
   "main": "index.js",
   "scripts": {
